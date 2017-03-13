@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="gTV-IL-0wX" customClass="CollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1a5-eb-x6d">
+                        <rect key="frame" x="0.0" y="0.0" width="135" height="50"/>
+                        <state key="normal" title="Button" image="QMUI_previewImage_checkbox_checked"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1a5-eb-x6d" secondAttribute="bottom" id="5Hk-aS-xAC"/>
+                <constraint firstItem="1a5-eb-x6d" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dFE-bJ-NmL"/>
+                <constraint firstItem="1a5-eb-x6d" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gOG-Ga-oBf"/>
+                <constraint firstAttribute="trailing" secondItem="1a5-eb-x6d" secondAttribute="trailing" id="p2j-wm-JVt"/>
+            </constraints>
+            <size key="customSize" width="135" height="50"/>
+            <connections>
+                <outlet property="btn" destination="1a5-eb-x6d" id="nxp-gi-4x7"/>
+            </connections>
+            <point key="canvasLocation" x="76.5" y="54"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="QMUI_previewImage_checkbox_checked" width="30" height="30"/>
+    </resources>
+</document>
